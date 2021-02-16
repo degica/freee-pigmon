@@ -2,9 +2,7 @@ NOTE: Be careful, this is the beta-version. Specifically, this doesn't have any 
 
 # Freee::Pigmon
 
-Request Freee time clocking with CLI.
-
-![image](https://vignette.wikia.nocookie.net/ultra/images/b/b9/Max_pigmon.png/revision/latest?cb=20111211083202)
+Request Freee time clocking with CLI. (Pigmon is just a name of this baby.)
 
 ## Installation
 
