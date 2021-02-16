@@ -1,3 +1,5 @@
+NOTE: Be careful, this is the beta-version. Specifically, this doesn't have any test codes. 😭
+
 # Freee::Pigmon
 
 Request Freee time clocking with CLI.
