@@ -77,6 +77,7 @@ module Freee
       end
 
       def get_clocks(access_token, employee_id, company_id, from_date: nil, to_date: nil, per: nil, page: nil)
+        to_date ||= from_date
         api_client(access_token).get_time_clocks(
           employee_id,
           company_id,

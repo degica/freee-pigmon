@@ -54,7 +54,8 @@ module Freee
         client = api_client
         response = client.send(method) do |req|
           req.url path
-          req.body = params.to_json unless params.nil?
+          req.params = params if params && method == :get
+          req.body = params.to_json unless params.nil? && method != :get
         end
         case response.status
         when 401
@@ -69,6 +70,7 @@ module Freee
           faraday.response :json, content_type: /\bjson$/
           faraday.adapter Faraday.default_adapter
         end
+        client.headers["FREEE-VERSION"] = "2022-02-01"
         client.authorization :Bearer, access_token
         client
       end
